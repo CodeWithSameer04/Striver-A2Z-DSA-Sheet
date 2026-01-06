@@ -1,0 +1,388 @@
+
+import java.util.Scanner;
+
+public class Pattern {
+    
+    // -----> Main Method <-----
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        while(T-- > 0){
+            int num = sc.nextInt();
+            pattern1(num);
+            System.out.println();
+            pattern2(num);
+            System.out.println();
+            pattern3(num);
+            System.out.println();
+            pattern4(num);
+            System.out.println();
+            pattern5(num);
+            System.out.println();
+            pattern6(num);
+            System.out.println();
+            pattern7(num);
+            System.out.println();
+            pattern8(num);
+            System.out.println();
+            pattern7(num);
+            pattern8(num);
+            System.out.println();
+            pattern9(num);
+            System.out.println();
+            pattern10(num);
+            System.out.println();
+            pattern11(num);
+            System.out.println(); 
+            pattern12(num);
+            System.out.println();
+            pattern13(num);
+            System.out.println();
+            pattern14(num);
+            System.out.println();
+            pattern15(num);
+            System.out.println();
+            pattern16(num);
+            System.out.println();
+            pattern17(num);
+            System.out.println();
+            pattern18(num);
+            System.out.println();
+            pattern19(num);
+            System.out.println();
+            pattern20(num);
+            System.out.println();
+            pattern21(num);
+            System.out.println();
+            
+            
+        }
+
+
+        sc.close();
+    }
+
+    // -----> My Functions <-----
+
+    // #Pattern 1
+    public static void pattern1(int num){
+        for(int i = 0; i < num; i++){
+            for(int j = 0; j < num; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+
+    }
+
+    // #Pattern 2
+    public static void pattern2(int num){
+        for(int i = 0; i < num; i++){
+            for(int j = 0; j <= i; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    
+    // #Pattern 3
+    public static void pattern3(int num){
+        for(int i = 0; i < num; i++){
+            for(int j = 0; j <= i; j++){
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    
+    }
+
+    // #Pattern 4
+    public static void pattern4(int num){
+        for(int i = 0; i < num; i++){
+            for(int j = 0; j <= i; j++){
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // #Pattern 5
+    public static void pattern5(int num){
+        for(int i = 0; i < num; i++){
+            for(int j = 0; j < num - i ; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    // #Pattern 6
+    public static void pattern6(int num){
+        for(int i = 0; i < num; i++){
+            for(int j = 0; j < num - i ; j++){
+                System.out.print(j +" ");
+            }
+            System.out.println();
+        }
+    }
+
+    // #Pattern 7
+    public static void pattern7(int num){
+        for(int i = 0; i < num; i++){
+            for(int j = 0; j < num - i - 1; j++){
+                System.out.print(" ");
+            }
+            for(int j = 0; j < 2 * i + 1; j++){
+                System.out.print("*");
+            }
+            for(int j = 0; j < num - i - 1; j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+    // #Pattern 8
+    public static void pattern8(int num){
+        for(int i = 0; i < num; i++){
+            for(int j = 0; j < i; j++){
+                System.out.print(" ");
+            }
+            for(int j = 0; j < 2 * num - (2 * i + 1); j++){
+                System.out.print("*");
+            }
+            for(int j = 0; j < i; j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+    // #Pattern 9
+    public static void pattern9(int num) {
+        for(int i = 1; i <= 2 * num - 1; i++){
+            int stars = i;
+            if(i > num) stars = 2 * num - i;
+            for(int j = 1; j <= stars; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    }
+
+    // #Pattern 10
+    public static void pattern10(int num){
+        int start = 0;
+        for(int i = 0; i < num; i++){
+            if (i % 2 == 0) start = 1;
+            else start = 0;
+            for(int j = 0; j <= i; j++){
+                System.out.print(start + " ");
+                start = 1 - start;
+            }
+            
+            System.out.println();
+        }
+    }
+
+    // #Pattern 11
+    public static void pattern11(int num){
+        for(int i = 1; i <= num; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print(i);
+            }
+            for(int j = 1; j <= 2 * (num - i); j++){
+                System.out.print(" ");
+            }
+            for(int j = i; j >= 1; j--){
+                System.out.print(i);
+            }
+            System.out.println();
+
+        }
+    }
+
+    // #Pattern 12
+    public static void pattern12(int num){
+        int n = 1;
+        for(int i = 1; i <= num; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print(n++ + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // #Pattern 13
+    public static void pattern13(int num){
+        for(int i = 1; i <= num; i++){
+            for(char j = 'A'; j <= 'A' + i - 1; j++){
+                
+                System.out.print(j);
+                
+            }
+            System.out.println();
+        }
+    }
+
+    // #Pattern 14
+    public static void pattern14(int num){
+        for(int i = num; i > 0; i--){
+            for(char j = 'A'; j <= 'A' + i - 1; j++){
+                
+                System.out.print(j);
+                
+            }
+            System.out.println();
+        }
+    }
+
+    // #Pattern 15
+    public static void pattern15(int num){
+        char ch = 'A';
+        for(int i = 1; i <= num; i++){
+            for(int j = 1; j <=i; j++){
+                
+                System.out.print(ch);
+                
+            }
+            ch++;
+            System.out.println();
+        }
+    }
+
+    // #Pattern 16
+    public static void pattern16(int num){
+        for(int i = 0; i < num; i++){
+            for(int j = 0; j < num - i - 1; j++){         
+                System.out.print(" ");
+            }
+
+            char ch = 'A';
+            for(int j = 0; j < 2 * i + 1; j++){
+                System.out.print(ch);
+                if (j < ((2 * i + 1) / 2)) ch++;
+                else ch--;
+            }
+
+
+
+            for(int j = 0; j < num - i - 1; j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+    // #Pattern 17
+    public static void pattern17(int num){
+        for (int i = num; i >= 1; i--) {
+        char start = (char)('A' + i - 1);  
+
+        for (char c = start; c <= 'A' + num - 1; c++) {
+            System.out.print(c + " ");
+        }
+
+        System.out.println();
+        }
+    }
+
+    // #Pattern 18
+    public static void pattern18(int num){
+       int spaces = 0;
+
+        // Upar Ka Topa
+        for (int i = num; i >= 1; i--) {
+
+            for (int j = 1; j <= i; j++)
+                System.out.print("*");
+
+            for (int j = 1; j <= spaces; j++)
+                System.out.print(" ");
+
+            for (int j = 1; j <= i; j++)
+                System.out.print("*");
+
+            spaces += 2;
+            System.out.println();
+        }
+
+        spaces -= 2;
+
+        // Neeche Ki Panty
+        for (int i = 1; i <= num; i++) {
+
+            for (int j = 1; j <= i; j++)
+                System.out.print("*");
+
+            for (int j = 1; j <= spaces; j++)
+                System.out.print(" ");
+
+            for (int j = 1; j <= i; j++)
+                System.out.print("*");
+
+            spaces -= 2;
+            System.out.println();
+        }
+    }
+
+    // #Pattern 19
+    public static void pattern19(int num){
+        int spaces = 2 * num - 2;
+        for(int i = 1; i <= 2 * num - 1; i++){
+            int stars = i;
+            if(i > num) stars = 2 * num - i;
+            for(int j = 1; j <= stars; j++){
+                System.out.print("*");
+            }
+            for(int j = 1; j <= spaces; j++){
+                System.out.print(" ");
+            }
+            for(int j = 1; j <= stars; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+            if(i < num) spaces -= 2;
+            else spaces += 2;
+        }
+    }
+
+    // #Pattern 20
+    public static void pattern20(int num){
+        for(int i = 0; i < num; i++){
+            for(int j = 0; j < num; j++){
+                if (i == 0 || i == num - 1 || j == 0 || j == num - 1){
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    // #Pattern 21
+    public static void pattern21(int num){
+        for(int i = 0; i < 2 * num - 1; i++){
+            for(int j = 0; j < 2 * num - 1; j++){
+                int top = i;
+                int left = j;
+                int right = (2 * num - 2) - j;
+                int bottom = (2 * num - 2) - i;
+
+                int min = Math.min(Math.min(top, bottom), Math.min(left, right));
+                System.out.print((num - min) + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // -----> End of My Functions <-----
+
+
+
+
+}
