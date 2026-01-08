@@ -1,0 +1,14 @@
+class Solution {
+    public void printName(int i, int n) {
+        // Base case
+        if (i > n) {
+            return;
+        }
+
+        // Print name
+        System.out.println("Harsh");
+
+        // Recursive call
+        printName(i + 1, n);
+    }
+}
