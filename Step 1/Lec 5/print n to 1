@@ -1,0 +1,14 @@
+class Solution {
+    public void printNumbers(int n) {
+        // Base case
+        if (n == 0) {
+            return;
+        }
+
+        // Print current number
+        System.out.println(n);
+
+        // Recursive call
+        printNumbers(n - 1);
+    }
+}
