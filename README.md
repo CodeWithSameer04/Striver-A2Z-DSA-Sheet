@@ -120,7 +120,6 @@ To add solutions, improve code quality, or fix bugs:
 ## 📜 License
 
 This project is open-source — feel free to use and adapt!
-*(Add your chosen license here, like MIT, if needed.)*
 
 ---
 
