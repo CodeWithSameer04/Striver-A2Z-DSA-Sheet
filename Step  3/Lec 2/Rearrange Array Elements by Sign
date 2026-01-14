@@ -1,0 +1,25 @@
+class Solution {
+    public int[] rearrangeArray(int[] nums) {
+        int num = nums.length;
+        int[] positive = new int[num / 2];
+        int[] negative = new int[num / 2];
+
+        int pos = 0, neg = 0;
+
+        for(int n : nums){
+            if( n > 0) positive[pos++] = n;
+            else negative[neg++] = n;
+        }
+
+        int[] result = new int[num];
+        int i = 0, j = 0, k = 0;
+
+        while (i < pos && j < neg){
+            result[k++] = positive[i++];
+            result[k++] = negative[j++];
+        }
+
+        return result;
+
+    }
+}
