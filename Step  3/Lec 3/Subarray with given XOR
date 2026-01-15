@@ -1,0 +1,17 @@
+HashMap<Integer, Integer> freq = new HashMap<>();
+        
+        int prefixXor = 0;
+        int count = 0;
+
+        freq.put(0, 1);
+
+        for (int num : A) {
+            prefixXor ^= num;
+
+            int target = prefixXor ^ B;
+            count += freq.getOrDefault(target, 0);
+
+            freq.put(prefixXor, freq.getOrDefault(prefixXor, 0) + 1);
+        }
+
+        return count;
