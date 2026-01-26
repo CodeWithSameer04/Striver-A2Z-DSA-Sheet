@@ -1,3 +1,4 @@
+// To find if a number is an Armstrong number or not
 class Solution {
     public boolean isArmstrong(int n) {
         int temp = n;
